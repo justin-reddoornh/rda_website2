@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/* CSS Document */
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: sans-serif;
+}
+#nav-bar
+{
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+.navbar
+{
+	padding-bottom: 0 !important;
+	padding-top: 0 !important;
+}
+.navbar-brand
+{
+	padding-bottom: 0 !important;
+	padding-top: 0 !important;
+}
+
+.card-img-top
+{
+	clip-path: polygon(3% 3%, 97% 3%, 97% 97%, 3% 97%);
+	transition: all 0.3s;
+}
+
+.card-img-top:hover
+{
+	transform: scale(1.11);
+	clip-path: polygon(7.5% 7.5%, 92.5% 7.5%, 92.5% 92.5%, 7.5% 92.5%);
+}
+
+.rd-logo
+{
+	opacity: 0.5;
+	transition: all 0.3s;
+}
+
+.rd-logo:hover
+{
+	opacity: 0.9;
+}
+
+.bi
+{
+	color: #fff;
+	opacity: 0.5;
+	transition: all 0.3s;
+}
+
+.bi:hover
+{
+	opacity: 0.9;
+}
+
+.rd-text-link
+{
+	color:#fff;
+	opacity: 0.5;
+	transition: all 0.3s;
+	text-decoration: none;
+}
+.rd-text-link:hover
+{
+	opacity: 0.9;
+}
+
+p {
+	opacity: .6;
+}
+
+li {
+	opacity: .6;
+}
+
+
+.rd-cta
+{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.rd-cta-icon
+{
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#shop:before {
+    height: 70px;
+    content: "";
+    display:block;
+}
+#social:before {
+    height: 70px;
+    content: "";
+    display:block;
+}
+#support:before {
+    height: 70px;
+    content: "";
+    display:block;
+}
+
+
+
+
+.rd-prod-text
+{
+	padding: 0 10px;
+}
+
+.rd-prod-title
+{
+	margin: 0;
+}
+
+
+
+
+
+
+
+.rd-container-scroll {
+  display: flex;
+  overflow-x: auto;
+}
+
+.rd-card-img-top
+{
+	align-content: center;
+	clip-path: polygon(3% 3%, 97% 3%, 97% 97%, 3% 97%);
+	transition: all 0.3s;
+}
+
+.rd-card-img-top:hover
+{
+	transform: scale(1.11);
+	clip-path: polygon(7.5% 7.5%, 92.5% 7.5%, 92.5% 92.5%, 7.5% 92.5%);
+}
+
+
+
+
+
+
+
+#rd-shop-slider {
+	display: flex !important;
+	justify-content: space-between;
+	width: 100%;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+}
+.rd-item{
+	flex-basis: calc(100% / 3);
+	flex-shrink: 0;
+	box-sizing: border-box ;
+	
+	margin-bottom: 30px !important;
+	height: 100%;
+}
+
+/* For tablet */
+@media screen and (max-width: 767px) {
+	.rd-item{
+		flex-basis: calc(100% / 2) !important;
+	}
+}
+
+/* For mobile */
+@media screen and (max-width: 575.98px) {
+	.rd-item{
+		flex-basis: calc(100%) !important;
+	}
+}
